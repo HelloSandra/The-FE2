@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小綠簽</title>
+    <link rel="icon" type="image/svg+xml" href="./img/Favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sign-bg">
+    <div class="header">
+        <h1><a href="index.html">小綠簽</a></h1>
+    </div>
+    <div class="container">
+        <div class="sign-import">
+            <span>手寫簽名</span>
+            <span>匯入簽名檔</span>
+        </div>
+        <div class="pen-color">
+            <div class="color black"></div>
+            <div class="color blue"></div>
+            <div class="color red"></div>
+        </div>
+        <canvas id="canvas" width="590" height="224" style="border: 1px solid"></canvas>
+        <img class="show-img" width="250" height="150" style="border: 1px solid" />
+        <div class="clear-save">
+            <button class="clear">清除</button>
+            <button class="save">建立簽名</button>
+        </div>
+    </div>
+
+    <script src="js/canvas.js"></script>
+    <!-- 引入pdf.js的套件 -->
+    <script src="https://unpkg.com/fabric@latest/dist/fabric.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/pdf.js"></script>
+    <script src="js/jquery2.2.3.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>

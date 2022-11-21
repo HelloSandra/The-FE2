@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**********************************************/
+body{
+	margin: 0 auto;
+	position: relative;
+}
+.sign-bg{
+	background: #F0F0F0;
+}
+/**body物件**/
+body .objective{
+	position: absolute;
+}
+.circle1{
+	left: 0;
+	bottom: 159px;
+	z-index: 1;
+}
+.plant-bg1{
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.plant-bg2{
+	right: 0;
+	top: 0;
+}
+/**header**/
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 28px 142px 19.85px 40px;
+}
+.header h1 a{
+	background-image: url(./img/logo.png);
+	width: 88.79px;
+	height: 57.15px;
+	display: block;
+	text-indent: -1000px;
+    overflow: hidden;
+}
+.header .history{
+	text-decoration: none;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #1C8B6A;
+	border: 2px solid #1C8B6A;
+	border-radius: 16px;
+	padding: 9px 32px;
+}
+.header .history:hover{
+	color: #fff;
+	background: #1C8B6A;	
+}
+/**首頁**/
+.center{
+	background: rgba(240, 240, 240, 0.58);
+	border-radius: 34px;
+	max-width: 1036px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 57px;
+}
+.center .intro h3{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 35px;
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+	border-radius: 34px 0px;
+	padding: 13.5px 52.5px;
+	display: inline-block;
+}
+.center .intro h2{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 72px;
+	color: #077854;
+	margin: 55px 0 6px 44px;
+}
+.center .intro p{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #424242;
+	margin-left: 44px;
+	margin-bottom: 285px;
+}
+.center .upload{
+	color: #B7B7B7;
+	background: #FFFFFF;
+	border: 2px dashed #B7B7B7;
+	border-radius: 26px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 417px;
+	height: 376px;
+	margin-top: 31px;
+	margin-right: 113px;
+}
+.center .upload img{
+	margin-top: 29.5px;
+	margin-bottom: 20px;
+}
+.name{
+	position: absolute;
+	right: 0;
+	margin: 17px 18px;
+}
+/*上傳按鈕*/
+.upload-btn{
+	overflow: hidden;
+  	position: relative;
+  	display: inline-block;
+ 	background:linear-gradient(180deg, #35A483 0%, #077854 100%);
+  	color:#FFFFFF;
+  	text-align:center; 
+  	-web-border-radius:10px;
+ 	-moz-border-radius:10px;
+  	border-radius: 16px;
+  	padding: 17px 77.5px;
+  	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+.upload-btn input{
+	position: absolute;
+  	opacity: 0;
+  	filter: alpha(opacity=0);
+  	top: 0;
+  	right: 0;
+  	width:100%;
+  	height:100%;
+}
+.center .upload p{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	color: #424242;
+	margin-bottom: 15px;
+}
+.center .upload .upload-limit{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #077854;
+}
+/**首頁背景插畫物件**/
+.center .objective{
+	height: fit-content;
+	position: absolute;
+}
+.ground{
+	right: 0;
+	bottom: -40px;
+	z-index: 1;
+}
+.person1{
+	right: 427px;
+	bottom: 14px;
+	z-index: 2;
+}
+.person2{
+	right: 244px;
+	bottom: 0;
+	z-index: 2;
+}
+.person3{
+	right: 79px;
+	bottom: 19px;
+	z-index: 2;
+}
+.person4{
+	right: 44px;
+	bottom: 144px;
+}
+.plant{
+	right: 166px;
+	bottom: 0px;
+	z-index: 2;
+}
+.bag{
+	right: 177px;
+	bottom: 6px;
+	z-index: 2;
+}
+
+/**歷史紀錄**/
+.record{
+	max-width: 1036px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 82.85px;
+	margin-bottom: 293px;
+}
+.record p{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #424242;
+	margin-top: 33px;
+}
+
+/**簽名or匯入**/
+.container{
+	max-width: 590px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sign-import{
+	background: #FFFFFF;
+	border-radius: 14px;
+}
+.sign-import span{
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	color: #077854;
+	padding: 8.5px 25px;
+    display: inline-block;
+}
+.sign-import span:hover, .sign-import span.active{
+	background: #077854;
+	color: #FFFFFF;
+    border-radius: 13px;
+}
+/**筆顏色**/
+.pen-color{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 53px;
+}
+.color{
+	width: 36px;
+	height: 34px;
+	border-radius: 100px;
+	box-sizing: border-box; /*解決頁面跳動感問題*/
+}
+.color:hover, .color.active{
+	border: white 3px solid;
+}
+.black{
+	background: #000000;
+  	box-shadow: 0 0 0 2px #000000;
+}
+.blue{
+	background: #0014C7;
+	margin: 0 16px;
+	box-shadow: 0 0 0 2px #0014C7;
+}
+.red{
+	background: #CA0000;
+	box-shadow: 0 0 0 2px #CA0000;
+}
+/**簽名畫布**/
+canvas{
+	background: #FFFFFF;
+	border-radius: 26px;
+	margin-top: 33px;
+	margin-bottom: 39px;
+}
+.show-img{
+	display: none;
+}
+/**清除or建立簽名**/
+.clear-save button{
+	text-decoration: none;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #1C8B6A;
+	border: #1C8B6A 1px solid;
+	border-radius: 16px;
+	padding: 15px 107px;
+	display: inline-block;
+}
+.clear-save button:hover{
+	color: #FFFFFF;
+	background: #1C8B6A;
+}
+
+/**簽名頁**/
+.tool-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFFFFF;
+	box-shadow: 1px -1px 6px rgba(0, 0, 0, 0.11);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.page-zoom{
+	display: flex;
+}
+.page, .zoom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 16px;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.11);
+	border-radius: 16px;
+	max-width: 199px;
+}
+.page p, .zoom p{
+	margin-left: 33px;
+	margin-right: 33px;
+}
+.item{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 6.5px 59.5px;
+}
+.item img{
+	background: #F0F0F0;
+	border-radius: 9px;
+	padding: 10.5px;
+}
+.item a{
+	text-decoration: none;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 17px;
+	text-align: center;
+	color: #B7B7B7;
+	margin-right: 24px;
+	display: block;
+}
+.item img:hover{
+	background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+}
+.finish{
+	background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.11);
+	border-radius: 16px;
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FFFFFF;
+	padding: 15px 55.5px;
+}
